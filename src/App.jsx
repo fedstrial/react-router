@@ -6,6 +6,7 @@ import Products from "./components/Products";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import DefaultLayout from "./components/layouts/DefaultLayout";
+import Product from "./components/Product";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/products" element={<Products />} />
+					<Route path="/products/:id" element={<Product />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
